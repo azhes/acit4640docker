@@ -1,0 +1,12 @@
+---
+version: '3'
+
+services:
+  web:
+    image: frontend:latest
+    ports:
+      - 8000:80
+    depends_on:
+      - app
+  app:
+    image: backend:latest
