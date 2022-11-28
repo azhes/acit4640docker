@@ -3,7 +3,7 @@ FROM python:3
 RUN apt-get update -qy
 RUN apt-get install -y gettext-base
 
-COPY app /app
+COPY backend/pp /app
 
 RUN useradd -m -d /backend backend
 
@@ -15,7 +15,7 @@ RUN su - backend
 
 RUN pip3 install flask
 
-COPY student.txt.template /backend/app/
+COPY backend/student.txt.template /backend/app/
 
 WORKDIR /backend/app/
 

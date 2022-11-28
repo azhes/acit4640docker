@@ -1,6 +1,6 @@
 FROM nginx
 
-COPY html/ /usr/share/nginx/html
+COPY frontend/html/ /usr/share/nginx/html
 
 RUN mkdir /etc/nginx/templates
 
