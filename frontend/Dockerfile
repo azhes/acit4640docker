@@ -6,4 +6,4 @@ RUN mkdir /etc/nginx/templates
 
 ENV API_URL=http://app:5000
 
-COPY default.conf.template /etc/nginx/templates/
+COPY frontend/default.conf.template /etc/nginx/templates/
