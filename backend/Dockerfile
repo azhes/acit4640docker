@@ -3,7 +3,7 @@ FROM python:3
 RUN apt-get update -qy
 RUN apt-get install -y gettext-base
 
-COPY backend/pp /app
+COPY backend/app /app
 
 RUN useradd -m -d /backend backend
 
